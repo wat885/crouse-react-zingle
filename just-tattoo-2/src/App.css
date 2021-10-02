@@ -1,14 +1,4 @@
-.app-header{
-  border-bottom: 1px solid gray;
-  height: 50px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.app-header-logo{
-  height: 44px
-}
 
 .app-grid{
   display: grid;
@@ -21,8 +11,3 @@
   padding: 30px;
 }
 
-.tattoo-item img {
-  display: block;
-  width: 100%;
-
-}
