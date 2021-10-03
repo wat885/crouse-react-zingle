@@ -9,23 +9,26 @@ function App() {
   const [selectedTattoo, setSelectedTattoo] = useState(null);
 
 
-  function onTattoOpneClick() {
-    setSelectedTattoo(tattoos[1])
+  function onTattoOpneClick(theTattoo) {
+    setSelectedTattoo(theTattoo)
+  }
+  function onTattoCloseClick() {
+    setSelectedTattoo(null)
   }
 
   const tattooElements = tattoos.map((tattoo, index) => {
-    return <Tatooitem key={index} tattoo={tattoo} />;
+    return <Tatooitem key={index} tattoo={tattoo} onTattooClick={onTattoOpneClick} />;
   });
 
   let tattooPost = null;
   if (!!selectedTattoo) {
-    tattooPost = <TattooPost tattoo={selectedTattoo} />;
+    tattooPost = <TattooPost tattoo={selectedTattoo} onBgClick={onTattoCloseClick} />;
   }
 
   return (
     <div className="app">
       <AppHeader />
-      <button onClick={onTattoOpneClick}>สักหน่อย</button>
+      {/* <button onClick={()=> {onTattoOpneClick(tattoos[3])}}>สักหน่อย</button> */}
 
       <div className="app-grid">{tattooElements}</div>
 
