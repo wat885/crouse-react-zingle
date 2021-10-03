@@ -6,7 +6,7 @@ function Tatooitem(props) {
   return (
     <div>
       <div className="tattoo-item">
-        <img src={tattoo.thumbnailUrl} onClick={()=> {onTattooClick(tattoo)}} />
+        <img src={tattoo.thumbnailUrl} onClick={()=> {onTattooClick(tattoo)}} alt='Tatooitem'/>
         <h4>{tattoo.title}</h4>
       </div>
     </div>

@@ -8,7 +8,7 @@ function TattooPost(props) {
       <div className="tattoo-post">
         <div className="tattoo-post-bg" onClick={onBgClick} />
         <div className="tattoo-post-content">
-          <img src={tattoo.fullUrl} />
+          <img src={tattoo.fullUrl} alt='TattooPost' />
           <h4>{tattoo.title}</h4>
         </div>
       </div>
