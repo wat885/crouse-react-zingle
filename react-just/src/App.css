@@ -8,9 +8,8 @@
     margin-right: auto;
 }
 
-.app-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 16px;
-    row-gap: 16px;
+.app-note {
+    background-color: pink;
+    margin-bottom: 16px;
+    padding: 12px;
 }
