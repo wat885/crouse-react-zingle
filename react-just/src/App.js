@@ -10,7 +10,18 @@ function App() {
   //States
   const [note, setNote] = useState(startNote);
 
-  const [allNotes, setAllNotes] = useState([]);
+  const [allNotes, setAllNotes] = useState([
+    {
+      id: "1",
+      content: "Lorem Ipsum is simply dummy text of the printing ",
+      author: "test01",
+    },
+    {
+      id: "2",
+      content: "Lorem Ipsum is simply dummy text of the printing ",
+      author: "test02",
+    },
+  ]);
 
   // fuctions
   function onNoteValueChange(event) {
@@ -35,6 +46,12 @@ function App() {
     setNote(startNote);
   }
 
+  function onNoteDelete(noteId) {
+    setAllNotes((prevAllNotes) => {
+      return prevAllNotes.filter((theNote) => theNote.id !== noteId);
+    });
+  }
+
   // elements
 
   const noteElement = allNotes.map((theNote) => {
@@ -42,6 +59,18 @@ function App() {
       <div key={theNote.id} className="app-note">
         <p>{theNote.content}</p>
         <h5>{theNote.author}</h5>
+        <p>
+          <a href="#">Edit</a>
+          <span> | </span>
+          <a
+            href="#"
+            onClick={() => {
+              onNoteDelete(theNote.id);
+            }}
+          >
+            Delete
+          </a>
+        </p>
       </div>
     );
   });
