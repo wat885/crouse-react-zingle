@@ -5,7 +5,7 @@ function TattooPost(props) {
   const { tattoo, onBgClick } = props;
   return (
     <div>
-      <div className="tattoo-post">
+      <div className="tattoo-post" onClick={onBgClick}>
         <div className="tattoo-post-bg" onClick={onBgClick} />
         <div className="tattoo-post-content">
           <img src={tattoo.fullUrl} alt='TattooPost' />

@@ -8,7 +8,7 @@ function App() {
 
   let popup = null;
   if (isPopupOpen) {
-    popup = <Popup onPopupClose={() => setIsPopupOpen(false)} />
+    popup = <Popup onPopupClose={() => setIsPopupOpen(false)} />;
   }
 
   // useEffect(() => {
@@ -36,7 +36,63 @@ function App() {
       <div className="app-container">
         <h1>เก็บโค้ดส่วนลดไม่ทัน</h1>
         {/* {userElements} */}
-        <button onClick={()=>{setIsPopupOpen(true)}} > เปิดป๊อปอัพ </button>
+        <button
+          onClick={() => {
+            setIsPopupOpen(true);
+          }}
+        >
+          {" "}
+          เปิดป๊อปอัพ{" "}
+        </button>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
+        <p>testopup</p>
       </div>
 
       {popup}
