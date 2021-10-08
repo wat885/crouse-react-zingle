@@ -8,7 +8,7 @@ function App() {
     <section className="app-section">
       <div className="app-container">
         <h2>Farm Dashboard</h2>
-        <Notification title="hi farm" description="เรามา" />
+        <Notification title="hi farm" description="เรามา" level="warning" />
         <Grid columns={2}>
           <Box title="ออเดอร์ต่อวัน">
             <ul>
